@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+
+        <div class="headerLeft">
+        <p>Carla Budar 2024</p>
+        </div>
+
+        <div class="headerRight">
+            <a href ='https://www.instagram.com/carbudar.zip' id="email">
+                <img src="Port illustrations/instagram.png">
+            </a> 
+            <a href ='https://mail.google.com/mail/u/0/?fs=1&to=carlabudar@gmail.com&tf=cm' id="email">
+                <img src="Port illustrations/email.png">
+            </a>
+            <a href ='index.html' id="home">
+                <img src="Port illustrations/home.png">
+
+            </a>
+        </div>
+    </div>
+
+    <div id="contentContainer">
+        <div id="thumbnail">
+            <button type="button" id="backBtn3">back</button>
+
+            <iframe src="https://editor.p5js.org/carbudar/full/awLpZY_O8"></iframe>
+            <button type="button" id="puppyVision">Try Me!</button>
+        </div>
+        
+        
+<div id="process">
+    <h1>Experimental Camera</h1>
+    <h2>P5.js (2023)</h2>
+    <br>
+    <p id="textContent">Puppy Vision<br>
+        In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, 
+        I came across a study which mentioned that dogs are only able to see yellow and blue. This made me realized how Charli 
+        is mostly intrigued by her blue blankets and toys which made me feel obligated to get her all blue everything.
+        The main purpose of this iteration is to help me put myself in Charli's shoes and see colors the way she sees it. This way, 
+        I can sort of pick and choose objects that looks interesting accoding to her vision.
+    <br><br>
+    Graphic Visualization<br>
+        Lastly, when exploring the possibilities of this createCapture() feature, I was inspired by the statics in the example starter code from the 
+        previous class activity. I found that a lot of fiction movies has special effects on it to keep the viewers immeresed and to convey the vibe 
+        of the story better. It also reminded me of those night vision cameras that people use in horror documentaries or movies which made the visuals 
+        look scarier than how it actually is.
+        I created this unstable visual for the camera to recreate those documentary-style cameras. I though that this playful approach was really fun to make and to explore!
+
+</p>
+<h2>Test Photos</h2>
+<div id='testpic'>
+<img src="Port illustrations/test pic1.png">
+<img src="Port illustrations/test pic2.png">
+<img src="Port illustrations/test pic 3.png">
+
+<p>Pic 1: Charli's favorite cartoon, Bluey<br>
+Pic 2: Lights and darks on the filter<br>
+Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
+
+<h2>Design Process</h2>
+<p>I started the design process by sketching the ideas out. Since this camera is color-based, there were not much 
+    things that I added to the sketch. I then tried to write a code for it in p5js by adjusting the pixels. Once that 
+    was done, I thought of exploring ascii characters, following a tutorial which I found on youtube. At first, I had 
+    a few different characters with varying shapes and sizes that makes up the image, however I did not really like 
+    how that looked as it seems too messy. I decided to change it to just one character (@) since it is a very dense 
+    character, making the video look more full and neat. I resized the character size to distort the image enough, but 
+    not too much until the image is unrecognizable. I also used arrays and forloops to create the repitition of the 
+    character 'tiles'. <br><br>
+    With this camera, I expect to be able to see similarly to how Charli sees her world and try to accomodate her with 
+    that. I tried showing some pictures of her favorite cartoons and toys, which surprisingly the colors looks very 
+    similar to how it looks like to the human eye. In simple, I want this camera to be sort of an artistic translator 
+    between dogs and humans to put us in the same page when interacting with toys or colors by showing it toys and 
+    objects as the main camera subject to read the colors based on puppy's vision.
+
+</p>
+
+<h2>References</h2>
+<p>
+    Pixel Array Tutorial: https://youtu.be/7UXCT_LVFNo?si=wKpFiMtunxtDsKez
+    ASCII Character Tutorial: https://youtu.be/55iwMYv8tGI?si=KCgW_mseKsGtE_bf</p>
+
+
+</div>
+</div>
+
+    </div>
+    <script>
+        var button = document.getElementById('puppyVision');
+    
+    button.addEventListener('click', function() {
+        window.location.href = 'https://editor.p5js.org/carbudar/full/awLpZY_O8';
+    });
+
+        var backBtn3 = document.getElementById('backBtn3');
+    
+backBtn3.addEventListener('click', function() {
+    window.location.href = 'page3.html';
+});
+
+       </script>
+</body>
+</html>

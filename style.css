@@ -2,6 +2,7 @@ body{
     margin:0;
     height: 100vh;
     width: 100vw;
+    background-color: #C93811;
 }
 
 a:visited,  
@@ -31,6 +32,11 @@ a:active
     grid-template-columns: repeat(5,1fr);
     height: 100vh;
     background-color: #DEE2F2;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    height: 92vh;
 }
 
 
@@ -38,9 +44,14 @@ a:active
     display:grid;
     grid-template-columns: repeat(3,1fr);
     height:100vh;
-    width:100vw;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
     background-color: #5F7EED; 
     border-bottom: 0;
+    overflow-y: hidden;    
+
 }
 
 
@@ -48,15 +59,25 @@ a:active
     margin: auto;
 }
 
-#dirSlideText{
-    grid-column-start: 3;
-    grid-column-end:4 ;
-    justify-content: start;
-    margin-left: 2vw;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 17vh;
+.textSlideCont{
+    position: absolute;
+    text-align: left;
+    justify-content: center;
+    font-size: 200%;
+    top: 8%;
+    left: 110%;
+    display: none;
+    z-index: 5;
+    white-space: nowrap;
+    width:9vw;
+}
 
+#dirContainer1:hover .textSlideCont,
+#dirContainer2:hover .textSlideCont,
+#dirContainer3:hover .textSlideCont,
+#dirContainer4:hover .textSlideCont {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -128,21 +149,26 @@ a:active
     grid-row-start:1 ;
     grid-row-end:2 ;
     margin: auto;
-    margin-left: 25%;
-    font-size: 300%;
+    font-size: 310%;
+    white-space: nowrap;
+    z-index: 1;
+    line-height: 130%;
 }
 
+span{
+    font-size: 220%;
+}
 
 
 
 .header{
     display: grid;
-    background-color: yellow;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F2D37C;
+    border-radius: 15px;
     height:8vh;
-    width:100vw;
-    position: absolute;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
 
@@ -193,7 +219,7 @@ a:active
 }
 
 #buildingCont img{
-    height:93vh;
+    height:92vh;
 
 }
 
@@ -236,7 +262,6 @@ a:active
     grid-row-start: 3;
     grid-row-end: 4;
     align-items: center; 
-    justify-items: start;
 }
 
 
@@ -248,11 +273,8 @@ a:active
 
 #sign1 p{
     position: relative;  
+    transform: translateX(-20%);
 }
-
-
-
-
 
 #sign3{
     display:grid;
@@ -263,7 +285,6 @@ a:active
     grid-row-start: 5;
     grid-row-end: 6;
     align-items: center;
-    justify-items: start;
 }
 #sign3 img{
     height:8%;
@@ -274,9 +295,7 @@ a:active
 }
 
 #sign3 p{
-    position: relative;
-    transform: translateX(40%);
-    
+    position: relative;    
 }
 
 #sign2{
@@ -301,7 +320,7 @@ a:active
 
 #sign2 p{
     position: relative;
-    transform: translateX(-70%);
+    transform: translateX(-45%);
     
 }
 
@@ -330,29 +349,66 @@ a:active
     
 }
 
+
+.signAct{
+    opacity: 0;
+}
+
+.signAct:hover{
+    opacity: 1;
+}
+
+.signRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signTextR {
+    text-align: center;
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+}
+
+.signTextL {
+    text-align: center;
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+}
+
 #page1Container {
     display: flex;
     justify-content: center;
     align-items: flex-end; 
-    height: 100vh;
+    height: 92vh;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
     background-color:#A3AFFF;
 }
 
 #p1Background {
-    max-height: 95vh;
+    max-height: 92vh;
     width: auto;
 }
 
 #page2Container, #page3Container,  #page4Container {
     display: flex;
     justify-content: stretch;
-    align-items: flex-end; 
-    height: 100vh;
+    align-items: flex-start; 
+    height: 92vh;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #p2Background, #p3Background {
     width: 100%; 
     height: 92vh; 
+    border-radius: 25px;
 }
 
 
@@ -360,6 +416,7 @@ a:active
     width: 100%; 
     height: 92vh; 
     transform: scaleX(-1);
+    border-radius: 25px;
 }
 
 
@@ -431,4 +488,201 @@ a:active
 .container4:hover .text-container {
     display: flex;
     flex-direction: column;
+}
+
+
+/*content page 1*/
+.content1 {
+    position: absolute;
+    height: 80vh;
+    width: 86vw;
+    margin-top: -11%;
+    transform: translate(15%,26%);
+  }
+
+  #expCam{
+    position: absolute;
+    left: 3%;
+    top: 7%;
+    height: 50%;
+  }
+
+  #lookIn{
+    position: absolute;
+    left: 3%;
+    top: 59%;
+    height: 40%;
+  }
+
+  #dataPor{
+    position: absolute;
+    left: 24%;
+    top: 2%;
+    height: 55%;
+  }
+
+  #rps{
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    height: 40%;
+  }
+
+  #inBloom{
+    position: absolute;
+    left: 55%;
+    top: 2%;
+    height: 50%;
+  }
+
+  #expClock{
+    position: absolute;
+    left: 70%;
+    top: 55%;
+    height: 45%;
+  }
+ 
+#expCam:hover, 
+#lookIn:hover,
+#dataPor:hover,
+#rps:hover,
+#inBloom:hover,
+#expClock:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+
+#contentContainer{
+    display: flex;
+    grid-template-columns:repeat(2,1fr);
+    border-radius:25px;
+    height: 92vh;
+    width:99vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#puppyVision{
+    width:13vw;
+    height: 7vh;
+    border-radius: 15px;
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#textContent{
+    line-height: 150%;
+}
+
+#testpic img{
+    width: 30%;
+    height: auto;
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#thumbnail{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    background-color: #B5BED9;
+    border-radius:25px;
+    width: 40vw;
+
+}
+
+#thumbnail iframe{
+    margin: auto;
+    width: 80%;
+    height: 160%;
+    margin-top:-10%;
+
+}
+
+#process{
+    overflow-y: auto; /* Add vertical scrollbar */
+
+    grid-column-start: 2;
+    grid-column-start: 3;
+    background-color: #A3AFFF;
+    border-radius:25px;
+    width: 60vw;
+    padding: 5vh;
+   
+}
+
+/* Additional styles for the scrollable class */
+.scrollable {
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+
+#backBtn{
+    width:5vw;
+    height: 5vh;
+    border-radius: 15px;
+    margin-top: 4%;
+    margin-left: 4%;
+
+}
+
+#backBtn3{
+    width:5vw;
+    height: 5vh;
+    border-radius: 15px;
+    margin-top: 4%;
+    margin-left: 4%;
+
+}
+
+
+.content2{
+    position: absolute;
+    height: 75vh;
+    width: 86vw;
+}
+
+#web1{
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    height: 40%;
+}
+
+#web2{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    height: 40%;
+}
+
+#web3{
+    position: absolute;
+    left: 7%;
+    top: 55%;
+    height: 40%;
+}
+
+#web4{
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    height: 40%;
+}
+
+#web1:hover,
+#web2:hover,
+#web3:hover,
+#web4:hover{
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
 }

@@ -26,3 +26,5 @@ for (let x = 1; x <= 4; x++) {
         window.location.href = 'page' + page + '.html';
     });
 }
+
+
