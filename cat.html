@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serial Communication</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+
+        <div class="headerLeft">
+        <p>Carla Budar 2024</p>
+        </div>
+
+        <div class="headerRight">
+            <a href ='https://www.instagram.com/carbudar.zip' id="email">
+                <img src="Port illustrations/instagram.png">
+            </a> 
+            <a href ='https://mail.google.com/mail/u/0/?fs=1&to=carlabudar@gmail.com&tf=cm' id="email">
+                <img src="Port illustrations/email.png">
+            </a>
+            <a href ='index.html' id="home">
+                <img src="Port illustrations/home.png">
+
+            </a>
+        </div>
+    </div>
+
+    <div id="contentContainer">
+        <div id="thumbnail">
+            <button type="button" id="backBtn4">back</button>
+
+            <video width="auto" height="400" autoplay muted loop id="video">
+                <source src="Port illustrations/IMG_1595.mov" type="video/mp4">
+              </video>
+            
+        </div>
+        
+        
+<div id="process">
+    <h1>Nod and Smile</h1>
+    <h2>Plastic Cat Toy, 3D Printed Parts, Electronics (2023)</h2>
+        <p id="textContent">
+        While being well-exposed working with p5.js as a digital medium, I was intrigued in combining the interaction between physical and digital components. In this project, I took an existing object and turning it into a new interactive toy; what once was a solar-powered kinetic toy is now turned into a light-triggered form with a digital output.
+    </p>    <br>
+    <h2>Design Process</h2>
+    <p>
+        <b>Ideation</b>
+        <br><br>
+        This project was inspired by the street-vendors that I usually walk-by in Chinatown, New York City. I often see them selling these toys, which I used to own as a kid too; everytime I see these non-stop-nodding characters, I always joke about how tiring it must be. It reminded me how contrastingly, people around me including myself would tend to nod and smile when tired, at school, at work, or in their social life. 
+        It has become a normalized social construct to the point where when we see people nodding and smiling, we never really know what is going on in their minds.<br><br>
+        I am hoping to visualize those clouded minds through this project.
+        <br><br>
+        The cat hat moves back and forth (using the pendulum mechanism inside it) which influences the amount of light source that comes to the photoresistor sensor (embeded onto the 3d printed part)
+
+I was originally going to use the ultrasonic sensor, however it is not too reactive as the distance of the object to the sensor remained constant.
+</p>
+
+<div id="video-container">
+    <video width="auto" height="400" autoplay muted loop id="video">
+        <source src="Port illustrations/IMG_1549.mov" type="video/mp4">
+      </video>
+      <p><i>(experimentation using ultrasonic sensor)</i></p>
+    </div>
+
+<p>With larger distance it works well, but not with small distance
+        <br><br>
+        <b>Deconstruction</b><br>
+        I hacked this toy by first taking apart the form; through this process, I learnt that these are the components within it:
+        <ul>
+            <li>Electromagnetic coil</li>
+            <li>Capacitor</li>
+            <li>Solar cell</li>
+            <li>Wires</li>
+            <li>Magnet on pendulum</li>
+        </ul>
+        <div id="deconstruction">
+        <img src="Port illustrations/deconstruct 1.jpeg">
+        <img src="Port illustrations/deconstruct 2.jpeg">
+        <img src="Port illustrations/deconstruct 3.jpeg">
+    </div><br><br>
+        <b>Rebuilding</b>
+        <p>Components:</p>
+        <ul>
+            <li>Arduino uno</li>
+            <li>Bread board</li>
+            <li>Photoresistor sensor</li>
+            <li>Jumper wires</li>
+            <li>220ohm resistor</li>
+            <li>Power cable</li>
+        </ul>
+        <p>Additional Materials:</p>
+        <ul>
+            <li>3D printed model</li>
+            <li>Cat toy (disassembled)</li>
+            <li>Nano tape</li>
+            <li>p5.serialcontrol</li>
+            <li>p5js sketch</li>
+        </ul>
+        <div id="deconstruction">
+            <img src="Port illustrations/cat rebuilt.jpeg">
+            <img src="Port illustrations/cat detail.jpg">
+            <img src="Port illustrations/cat back.jpeg">
+        </div>
+
+       
+    </p>
+    
+
+
+
+</div>
+</div>
+
+    </div>
+    <script>
+
+        var backBtn4 = document.getElementById('backBtn4');
+    
+backBtn4.addEventListener('click', function() {
+    window.location.href = 'page4.html';
+});
+
+       </script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimental Camera</title>
+    <title>In Bloom</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -32,61 +32,81 @@
         <div id="thumbnail">
             <button type="button" id="backBtn">back</button>
 
-            <iframe src="https://editor.p5js.org/carbudar/full/awLpZY_O8"></iframe>
-            <button type="button" id="puppyVision">Try Me!</button>
+            <iframe src="https://editor.p5js.org/carbudar/full/knKo2lGbS"></iframe>
+            <button type="button" id="fullScreen">Try Me!</button>
         </div>
         
         
 <div id="process">
-    <h1>Experimental Camera</h1>
+    <h1>In Bloom</h1>
     <h2>P5.js (2023)</h2>
     <br>
-    <p id="textContent">Puppy Vision<br>
-        In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, 
-        I came across a study which mentioned that dogs are only able to see yellow and blue. This made me realized how Charli 
-        is mostly intrigued by her blue blankets and toys which made me feel obligated to get her all blue everything.
-        The main purpose of this iteration is to help me put myself in Charli's shoes and see colors the way she sees it. This way, 
-        I can sort of pick and choose objects that looks interesting accoding to her vision.
-    <br><br>
-    Graphic Visualization<br>
-        Lastly, when exploring the possibilities of this createCapture() feature, I was inspired by the statics in the example starter code from the 
-        previous class activity. I found that a lot of fiction movies has special effects on it to keep the viewers immeresed and to convey the vibe 
-        of the story better. It also reminded me of those night vision cameras that people use in horror documentaries or movies which made the visuals 
-        look scarier than how it actually is.
-        I created this unstable visual for the camera to recreate those documentary-style cameras. I though that this playful approach was really fun to make and to explore!
+    <p id="textContent">
+        Design and code an animating optical illusion and consider its deployment.
+        <br><br>
 
+        When I was younger, my grandmother would always buy me and my siblings spirograph templates, which is a plastic stencil with circle cut out with ridges on them. We would trace lines in it using the given template and make all kinds of cool spirals. I always found it facinating how multiple lines could make a form that looks three dimensional. I also liked the flower-like shapes that they created; it was one of the coolest thing that I know how to do as a kid.
+        With this assignment, I wanted to recreate a similar effect to the spirographs by repeating multiple ellipses on top of each other which will then create a parametrized form.
 </p>
-<h2>Test Photos</h2>
-<div id='testpic'>
-<img src="Port illustrations/test pic1.png">
-<img src="Port illustrations/test pic2.png">
-<img src="Port illustrations/test pic 3.png">
-
-<p>Pic 1: Charli's favorite cartoon, Bluey<br>
-Pic 2: Lights and darks on the filter<br>
-Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
-
 <h2>Design Process</h2>
-<p>I started the design process by sketching the ideas out. Since this camera is color-based, there were not much 
-    things that I added to the sketch. I then tried to write a code for it in p5js by adjusting the pixels. Once that 
-    was done, I thought of exploring ascii characters, following a tutorial which I found on youtube. At first, I had 
-    a few different characters with varying shapes and sizes that makes up the image, however I did not really like 
-    how that looked as it seems too messy. I decided to change it to just one character (@) since it is a very dense 
-    character, making the video look more full and neat. I resized the character size to distort the image enough, but 
-    not too much until the image is unrecognizable. I also used arrays and forloops to create the repitition of the 
-    character 'tiles'. <br><br>
-    With this camera, I expect to be able to see similarly to how Charli sees her world and try to accomodate her with 
-    that. I tried showing some pictures of her favorite cartoons and toys, which surprisingly the colors looks very 
-    similar to how it looks like to the human eye. In simple, I want this camera to be sort of an artistic translator 
-    between dogs and humans to put us in the same page when interacting with toys or colors by showing it toys and 
-    objects as the main camera subject to read the colors based on puppy's vision.
-
+<p>
+    <b>Ideation and Sketches</b><br>
+    Apart from the concept that I went with, there were several other ideas that I came up with, including:
+    <div class="inbloomSketch">
+    <img src="Port illustrations/inbloom sketch 1.jpeg"><br>
+    <i>Sketch 1: Circle pattern with different oppacities</i>
+    <br>
+    <img src="Port illustrations/inbloom sketch 2.jpeg"><br>
+    <i>Sketch 2: Tunnel illusion</i>
+    <br>
+    <img src="Port illustrations/inbloom sketch 4.jpeg"><br>
+    <i>Sketch 3: Three dimensional box</i>
+    <br>
+    <img src="Port illustrations/inbloom sketch 5.jpeg"><br>
+    <i>Sketch 4: Spirals inspired by spirographs (final idea)</i>
+</div>
 </p>
 
-<h2>References</h2>
+<br>
+
+<h2>
+    Coding Process
+</h2>
 <p>
-    Pixel Array Tutorial: https://youtu.be/7UXCT_LVFNo?si=wKpFiMtunxtDsKez
-    ASCII Character Tutorial: https://youtu.be/55iwMYv8tGI?si=KCgW_mseKsGtE_bf</p>
+    After finalizing my idea for the chosen consept, I started sketching the form in p5js. I started with an ellipse and using the nested for loops to create multiples of the ellipse. I also used rotate() under the for loops to rotate and duplicate the group of ellipse. When trying to make an animation using IF/ELSE, I found it to be quite challenging as I could only get it to work if there were only one ellipse group. I was able to make it move from left to right, though I did not quite like the way it looks.
+</p>
+
+<h2>
+    Extra Exploration
+</h2>
+<iframe
+width="50%"
+style="aspect-ratio: 1/1"
+frameborder="0"
+src="https://editor.p5js.org/carbudar/full/8V0kbbNjb"
+></iframe>
+
+<iframe
+        width="50%"
+        style="aspect-ratio: 1/1"
+        frameborder="0"
+        src="https://editor.p5js.org/carbudar/full/oGXKeBJBZ"
+        ></iframe>
+
+<h2>
+    Reflection
+</h2>
+<p>
+    <b>Describe the process of researching, designing, and fine-tuning your optical illusion. How might your optical illusion get deployed in the world around you?<br>
+         May it be incorporated into a browser extension? <br> 
+         Can it possibly be turned into a piece of wearableLinks?</b>
+         <br><br>
+        When working on this optical illusion assignment, my process was full of exploring and experimenting as the For Loop concept was new to me. 
+        I liked the idea and concept that I had which made the process immersive. Though there are more things that I do not understand yet in the concept of for 
+        loops and nested for loops, I believe that I can use for loops in various different ways. I also found myself going back and adjusting the numbers in my for 
+        loop to meet my desired visual aesthetic on the sketch.
+        I think this kind of optical illusion can be used as interactive graphics in websites and social medias. I also think this graphic could look cool as a projection installation. Due to its repetitive patterns, in my opinion, this optical illusion design can be transformed to various different medias and mediums (not limited to digital).
+</p>
 
 
 </div>
@@ -94,10 +114,10 @@ Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
 
     </div>
     <script>
-        var button = document.getElementById('puppyVision');
+        var button = document.getElementById('fullScreen');
     
     button.addEventListener('click', function() {
-        window.location.href = 'https://editor.p5js.org/carbudar/full/awLpZY_O8';
+        window.location.href = 'https://editor.p5js.org/carbudar/full/knKo2lGbS';
     });
 
         var backBtn = document.getElementById('backBtn');

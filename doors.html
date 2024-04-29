@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimental Camera</title>
+    <title>Looking In Looking Out</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -32,73 +32,73 @@
         <div id="thumbnail">
             <button type="button" id="backBtn">back</button>
 
-            <iframe src="https://editor.p5js.org/carbudar/full/awLpZY_O8"></iframe>
-            <button type="button" id="puppyVision">Try Me!</button>
+            <video width="auto" height="240" autoplay muted loop id="video">
+                <source src="Port illustrations/IMG_6712.mov" type="video/mp4">
+              </video>
+            
         </div>
         
         
 <div id="process">
-    <h1>Experimental Camera</h1>
-    <h2>P5.js (2023)</h2>
+    <h1>Looking In Looking Out</h1>
+    <h2>Unity + Arduino (2024)</h2>
     <br>
-    <p id="textContent">Puppy Vision<br>
-        In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, 
-        I came across a study which mentioned that dogs are only able to see yellow and blue. This made me realized how Charli 
-        is mostly intrigued by her blue blankets and toys which made me feel obligated to get her all blue everything.
-        The main purpose of this iteration is to help me put myself in Charli's shoes and see colors the way she sees it. This way, 
-        I can sort of pick and choose objects that looks interesting accoding to her vision.
+    <p id="textContent">
+        How does perspective of looking in and looking out differ? How does society agree on what is right and what is wrong? Looking in? looking out? 
     <br><br>
-    Graphic Visualization<br>
-        Lastly, when exploring the possibilities of this createCapture() feature, I was inspired by the statics in the example starter code from the 
-        previous class activity. I found that a lot of fiction movies has special effects on it to keep the viewers immeresed and to convey the vibe 
-        of the story better. It also reminded me of those night vision cameras that people use in horror documentaries or movies which made the visuals 
-        look scarier than how it actually is.
-        I created this unstable visual for the camera to recreate those documentary-style cameras. I though that this playful approach was really fun to make and to explore!
-
-</p>
-<h2>Test Photos</h2>
-<div id='testpic'>
-<img src="Port illustrations/test pic1.png">
-<img src="Port illustrations/test pic2.png">
-<img src="Port illustrations/test pic 3.png">
-
-<p>Pic 1: Charli's favorite cartoon, Bluey<br>
-Pic 2: Lights and darks on the filter<br>
-Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
-
-<h2>Design Process</h2>
-<p>I started the design process by sketching the ideas out. Since this camera is color-based, there were not much 
-    things that I added to the sketch. I then tried to write a code for it in p5js by adjusting the pixels. Once that 
-    was done, I thought of exploring ascii characters, following a tutorial which I found on youtube. At first, I had 
-    a few different characters with varying shapes and sizes that makes up the image, however I did not really like 
-    how that looked as it seems too messy. I decided to change it to just one character (@) since it is a very dense 
-    character, making the video look more full and neat. I resized the character size to distort the image enough, but 
-    not too much until the image is unrecognizable. I also used arrays and forloops to create the repitition of the 
-    character 'tiles'. <br><br>
-    With this camera, I expect to be able to see similarly to how Charli sees her world and try to accomodate her with 
-    that. I tried showing some pictures of her favorite cartoons and toys, which surprisingly the colors looks very 
-    similar to how it looks like to the human eye. In simple, I want this camera to be sort of an artistic translator 
-    between dogs and humans to put us in the same page when interacting with toys or colors by showing it toys and 
-    objects as the main camera subject to read the colors based on puppy's vision.
-
+    This project was my first attempt in building a projected immersive environment, employing both a physical and digital experience. I was inspired by the prompt looking in looking out as 
+    a tool of reflection as well as escapism. While doors can lead you into a space, it can also transport you out beyond it. With my partner and classmate, Michelle Xing, we were able to cohesively build a media where people could 
+    enter a space of reflection beyond the tangible world. 
 </p>
 
-<h2>References</h2>
+<h2>
+    Design Process
+</h2>
 <p>
-    Pixel Array Tutorial: https://youtu.be/7UXCT_LVFNo?si=wKpFiMtunxtDsKez
-    ASCII Character Tutorial: https://youtu.be/55iwMYv8tGI?si=KCgW_mseKsGtE_bf</p>
+    <b>Ideation</b><br>
+    We wanted this project to convey portals while still resembling spaces that people are familiar with. Our objective is based on how people feel emotions and how can these porttals bring people back to these specific feelings.
+    We chose three main rooms which we then built in Unity, including:<br>
+    <ul>
+        <li>
+           <b>Hospital</b>
+        </li>
+        <p>
+            A hospital is the place full of feelings and emotion depending on each individual's experience. It can resemble joy from birth, yet the sorrow of death. The warmth of family, yet the coldness of loneliness. <br>
+            We depicted this hospital room empty so that the emotions triggered are solely based on the space and not influenced by the activity and life in the hospital. We wanted the viewers to relive their experience here, transporting them to the specific time where a big experience took place, which normally is not actively being thought of.
+        </p><br>
+        <li>
+           <b>Cinema</b>
+        </li>
+        <p>
+            Similarly to the hospital, a cinema experience can vary based on the kind of movie we are watching, or the arcade games there, 
+            or even the movie theater snacks. With this scene, we hoped to bring nostalgia of anticipating a movie in the cinema or even 
+            the feeling of escapism, immersed in the movie scene.
+        </p><br>
+        <li>
+            <b>Hallway of doors</b>
+        </li>
+        <p>
+            When thinking of hallway of doors, there are multiple possibility of what it can be. It can bring one back to a vacation, on the way to check out a hotel room for the first time; or to a movie scene where the main character is in a spiral choosing which door is going to bring them th ebest fate. 
+            Based on the user's experience with this familiar scene, it can form very distinctive experiences that are incomparable to other users.
+        </p>
+    </ul>
+        <p>All in all, these different scenes which are capable of housing such contrasting experiences are chosen to evoke different thoughts, emotions, and memories of the users entering.</p>
 
+        <h2>
+            Building Process
+        </h2>
+        <p>
+            After building the environment in Unity, I connected each keypress function(which brings the scene from the door into the scene) to a physical button through a micro-controller. In this project, I used an Arduino Leonardo as it is recognized as a usb communication input, similarly to a usb powered keyboard or mouse.
+            <br>
+            I also built the physical model using foam-core boards and embedding the buttons onto the model which represents doorbells; this physical interaction helps the user feel more connected to the experience as their actions (pressing the button) act as a trigger to the video in contrast to just watching a digital video.
+        </p>
 
+</p>
 </div>
 </div>
 
     </div>
     <script>
-        var button = document.getElementById('puppyVision');
-    
-    button.addEventListener('click', function() {
-        window.location.href = 'https://editor.p5js.org/carbudar/full/awLpZY_O8';
-    });
 
         var backBtn = document.getElementById('backBtn');
     

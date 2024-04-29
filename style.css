@@ -548,7 +548,7 @@ span{
 #rps:hover,
 #inBloom:hover,
 #expClock:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
   transition: transform 0.2s ease;
 }
 
@@ -563,7 +563,7 @@ span{
     margin-right: auto;
 }
 
-#puppyVision{
+#fullScreen{
     width:13vw;
     height: 7vh;
     border-radius: 15px;
@@ -626,7 +626,7 @@ span{
 }
 
 
-#backBtn{
+#backBtn,#backBtn3,#backBtn4{
     width:5vw;
     height: 5vh;
     border-radius: 15px;
@@ -634,16 +634,6 @@ span{
     margin-left: 4%;
 
 }
-
-#backBtn3{
-    width:5vw;
-    height: 5vh;
-    border-radius: 15px;
-    margin-top: 4%;
-    margin-left: 4%;
-
-}
-
 
 .content2{
     position: absolute;
@@ -683,6 +673,125 @@ span{
 #web2:hover,
 #web3:hover,
 #web4:hover{
-    transform: scale(1.02);
+    transform: scale(1.03);
     transition: transform 0.2s ease;
 }
+
+
+.content3{
+    position: absolute;
+    height: 82vh;
+    width: 86vw;
+
+}
+
+
+#table{
+    position: absolute;
+    height:50%;
+    left: 3%;
+    top: 5%;
+
+}
+
+#dial{
+    position: absolute;
+    height:35%;
+    left: 10%;
+    top: 60%;
+}
+
+
+#sun{
+    position: absolute;
+    height:39%;
+    left: 30%;
+    top: 8%;
+}
+
+#ropeLamp{
+    position: absolute;
+    height:45%;
+    left: 45%;
+    top: 50%;
+}
+
+#cat{
+    position: absolute;
+    height:45%;
+    left: 77%;
+    top: 50%;
+}
+
+
+#lamp{
+    position: absolute;
+    height:40%;
+    left: 65%;
+    top: 5%;
+}
+
+#table:hover,
+#dial:hover,
+#sun:hover,
+#ropeLamp:hover,
+#cat:hover,
+#lamp:hover{
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+#dataTrackImg{
+    height: 50%;
+}
+
+.inbloomSketch img{
+    width: 60%;
+}
+
+#video{
+    margin-top: -20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#web{
+    width:200%;
+    
+}
+
+.webImg{
+    width: 70%;
+}
+
+.photo-grid, .tableProcess {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.photo-grid img,
+.photo-grid video,
+.tableProcess img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#deconstruction {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align vertically */
+    gap: 1%;
+}
+
+#deconstruction img {
+    max-width: 30%;
+    height: auto;
+}
+
+#video-container{
+    margin-top: 23%;
+}
+
+

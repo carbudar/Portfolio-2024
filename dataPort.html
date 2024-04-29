@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimental Camera</title>
+    <title>Data Portrait</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -32,61 +32,80 @@
         <div id="thumbnail">
             <button type="button" id="backBtn">back</button>
 
-            <iframe src="https://editor.p5js.org/carbudar/full/awLpZY_O8"></iframe>
-            <button type="button" id="puppyVision">Try Me!</button>
+            <iframe src="https://editor.p5js.org/carbudar/full/Zlm2QO95a"></iframe>
+            <button type="button" id="fullScreen">Try Me!</button>
         </div>
         
         
 <div id="process">
-    <h1>Experimental Camera</h1>
+    <h1>Data Portrait</h1>
     <h2>P5.js (2023)</h2>
     <br>
-    <p id="textContent">Puppy Vision<br>
-        In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, 
-        I came across a study which mentioned that dogs are only able to see yellow and blue. This made me realized how Charli 
-        is mostly intrigued by her blue blankets and toys which made me feel obligated to get her all blue everything.
-        The main purpose of this iteration is to help me put myself in Charli's shoes and see colors the way she sees it. This way, 
-        I can sort of pick and choose objects that looks interesting accoding to her vision.
-    <br><br>
-    Graphic Visualization<br>
-        Lastly, when exploring the possibilities of this createCapture() feature, I was inspired by the statics in the example starter code from the 
-        previous class activity. I found that a lot of fiction movies has special effects on it to keep the viewers immeresed and to convey the vibe 
-        of the story better. It also reminded me of those night vision cameras that people use in horror documentaries or movies which made the visuals 
-        look scarier than how it actually is.
-        I created this unstable visual for the camera to recreate those documentary-style cameras. I though that this playful approach was really fun to make and to explore!
+    <p id="textContent">
+        For this project, I spent a week tracking my personal habit to create a data-self portrait. 
+        <br><br>
+        <b>Data farming constraints:</b>
+        <ul>
+            <li>Need to collect 20 ~ 50 data points.</li>
+            <li>Record the data onto a numbered list every time it happens.</li>
+            <li>Translate the list into array in p5.js. </li>
+            <li>Animate the data self-portrait.</li>
+    </ul>
+    
+    <br>
+
+    <h2>Data Points</h2>
+    <img src="Port illustrations/data track.png" id="dataTrackImg">
+    <p>I tracked the social interactions that I do each day for a week. The main data points are:</p>
+    <ol>
+<li>How many people do I interact with throughout that day?</li>
+<li>How long do I spend to go out and socialize with people in real life per day? (in minutes)</li>
+<li>How much time do I spend talking to people on the phone? (in minutes)</li>
+</ol>
 
 </p>
-<h2>Test Photos</h2>
-<div id='testpic'>
-<img src="Port illustrations/test pic1.png">
-<img src="Port illustrations/test pic2.png">
-<img src="Port illustrations/test pic 3.png">
+<h3>Arrays</h3>
+<p>totalPeople = [9, 9, 21, 13, 11, 8, 20];<br>
+    inPerson = [180, 200, 330, 210, 165, 170, 720];<br>
+    virtual = [541, 431, 489, 204, 530, 522, 116];</p>
 
-<p>Pic 1: Charli's favorite cartoon, Bluey<br>
-Pic 2: Lights and darks on the filter<br>
-Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
+<h2>How to read the data portrait?</h2>
+<p>
+    This sketch is divided into <b>7 different parts</b> (shown by the guidelines in the background); the first section 
+    determines the first day which was Wednesday. The section goes up until the last day, which is Tuesday and 
+    the days change based on the mouse location. The density and the size of the<b>orange form</b> is the amount of 
+    time that I spent talking to people on the phone (in minutes), while the density and size or the <b>purple form</b> 
+    is based on the total minutes I spent interacting with people in real life. Lastly, the <b>row of squares</b> that
+    travels from left to right shows the amount of people I interacted with per day.
+</p>
 
 <h2>Design Process</h2>
-<p>I started the design process by sketching the ideas out. Since this camera is color-based, there were not much 
-    things that I added to the sketch. I then tried to write a code for it in p5js by adjusting the pixels. Once that 
-    was done, I thought of exploring ascii characters, following a tutorial which I found on youtube. At first, I had 
-    a few different characters with varying shapes and sizes that makes up the image, however I did not really like 
-    how that looked as it seems too messy. I decided to change it to just one character (@) since it is a very dense 
-    character, making the video look more full and neat. I resized the character size to distort the image enough, but 
-    not too much until the image is unrecognizable. I also used arrays and forloops to create the repitition of the 
-    character 'tiles'. <br><br>
-    With this camera, I expect to be able to see similarly to how Charli sees her world and try to accomodate her with 
-    that. I tried showing some pictures of her favorite cartoons and toys, which surprisingly the colors looks very 
-    similar to how it looks like to the human eye. In simple, I want this camera to be sort of an artistic translator 
-    between dogs and humans to put us in the same page when interacting with toys or colors by showing it toys and 
-    objects as the main camera subject to read the colors based on puppy's vision.
+<p>
+    Originally I wanted to make my data portrait in a more geometric shapes with a dynamic background. However, 
+    while working on it in p5js, I started exploring more with the for loop and ended up with an interesting form. 
+    I also played around with the fill, alpha color, and stroke weight to add more character. <br><br>
 
+At first, I grouped the codes in fucntion based on days, but I realized that the code ended up being long and 
+repetitive, with the array being the only difference in every function. I then tried to make a new function and 
+making the arrays as the arguments in the new function. It worked in the beginning, but the animation ended up 
+not being too smooth. I think this might probably due to a faulty code and I will look more into it. I also 
+realized that I could seperate each element into its own function and calling them in new functions based on the days.
 </p>
 
-<h2>References</h2>
+<h2>Reflection</h2>
 <p>
-    Pixel Array Tutorial: https://youtu.be/7UXCT_LVFNo?si=wKpFiMtunxtDsKez
-    ASCII Character Tutorial: https://youtu.be/55iwMYv8tGI?si=KCgW_mseKsGtE_bf</p>
+    I think the full process of creating this data portrait revolves in exploring the visuals and understanding array. 
+    At first, I was not sure if I used the array properly, but at the end I was able to slowly grasp the concept of 
+    arrays. I should also learn to minimize my code and make it more effective and not repetitive in the future.
+<br><br>
+    <b>What did you learn about yourself through the process of self-tracking?</b> 
+    <br>
+    After acquiring the data, I noticed that 
+    generally, there is a big contrast between my social life physically and online. I was shocked at how much time I spent talking on the phone and how I would usually go home straight after class. Though this data tracking was done for an assignment, I felt like I was missing out big time and was moved to start socializing more.
+    <br><br>
+    <b>What was gained / lost through the process of data visualization?</b>
+    <br>
+    With the amount of data and numbers that was collected, I wanted to show them in the most understandable and straight forward way possible. However, throughout the process I realized that some functionality are more complicated to do so I had to change my ideas and adjust with the programming concepts that I have learnt in this class. Though I am excited to explore and develop this (or similar) project further.</p>
 
 
 </div>
@@ -94,10 +113,10 @@ Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
 
     </div>
     <script>
-        var button = document.getElementById('puppyVision');
+        var button = document.getElementById('fullScreen');
     
     button.addEventListener('click', function() {
-        window.location.href = 'https://editor.p5js.org/carbudar/full/awLpZY_O8';
+        window.location.href = 'https://editor.p5js.org/carbudar/full/Zlm2QO95a';
     });
 
         var backBtn = document.getElementById('backBtn');

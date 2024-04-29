@@ -32,61 +32,47 @@
         <div id="thumbnail">
             <button type="button" id="backBtn3">back</button>
 
-            <iframe src="https://editor.p5js.org/carbudar/full/awLpZY_O8"></iframe>
-            <button type="button" id="puppyVision">Try Me!</button>
+            <iframe src="https://carbudar.github.io/Assignment-1/" id="web"></iframe>
+            <button type="button" id="fullScreen">Full Screen</button>
         </div>
         
         
 <div id="process">
     <h1>Website 1: Deserted State of Mind</h1>
-    <h2>HTML, CSS</h2>
+    <h2>HTML, CSS (2024)</h2>
     <br>
-    <p id="textContent">Puppy Vision<br>
-        In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, 
-        I came across a study which mentioned that dogs are only able to see yellow and blue. This made me realized how Charli 
-        is mostly intrigued by her blue blankets and toys which made me feel obligated to get her all blue everything.
-        The main purpose of this iteration is to help me put myself in Charli's shoes and see colors the way she sees it. This way, 
-        I can sort of pick and choose objects that looks interesting accoding to her vision.
+    <p id="textContent">
+        Create a network of pages as a non-linear poem. Each word or phrase is linked to another page that expands upon this poem or story.
     <br><br>
-    Graphic Visualization<br>
-        Lastly, when exploring the possibilities of this createCapture() feature, I was inspired by the statics in the example starter code from the 
-        previous class activity. I found that a lot of fiction movies has special effects on it to keep the viewers immeresed and to convey the vibe 
-        of the story better. It also reminded me of those night vision cameras that people use in horror documentaries or movies which made the visuals 
-        look scarier than how it actually is.
-        I created this unstable visual for the camera to recreate those documentary-style cameras. I though that this playful approach was really fun to make and to explore!
+    I had previously wrote this piece of creative writing which visualizes the struggles of a solitary battle with insomnia and over-thinking, and how the momentary experience can affect the subject.
 
-</p>
-<h2>Test Photos</h2>
-<div id='testpic'>
-<img src="Port illustrations/test pic1.png">
-<img src="Port illustrations/test pic2.png">
-<img src="Port illustrations/test pic 3.png">
-
-<p>Pic 1: Charli's favorite cartoon, Bluey<br>
-Pic 2: Lights and darks on the filter<br>
-Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
-
-<h2>Design Process</h2>
-<p>I started the design process by sketching the ideas out. Since this camera is color-based, there were not much 
-    things that I added to the sketch. I then tried to write a code for it in p5js by adjusting the pixels. Once that 
-    was done, I thought of exploring ascii characters, following a tutorial which I found on youtube. At first, I had 
-    a few different characters with varying shapes and sizes that makes up the image, however I did not really like 
-    how that looked as it seems too messy. I decided to change it to just one character (@) since it is a very dense 
-    character, making the video look more full and neat. I resized the character size to distort the image enough, but 
-    not too much until the image is unrecognizable. I also used arrays and forloops to create the repitition of the 
-    character 'tiles'. <br><br>
-    With this camera, I expect to be able to see similarly to how Charli sees her world and try to accomodate her with 
-    that. I tried showing some pictures of her favorite cartoons and toys, which surprisingly the colors looks very 
-    similar to how it looks like to the human eye. In simple, I want this camera to be sort of an artistic translator 
-    between dogs and humans to put us in the same page when interacting with toys or colors by showing it toys and 
-    objects as the main camera subject to read the colors based on puppy's vision.
+    For this project, I split this poem into three independent parts; depending on how the user navigate through the page, every individual will experience the poem differently. 
+    The writing is re-wrote to make sense disregarding the sequence of the thread. My main objective when designing the webpage is to evoke two distinctive feelings when reading it through a digital webpage compared to reading it on paper.
 
 </p>
 
-<h2>References</h2>
+<h2>Webpage Explained</h2>
+<img src="Port illustrations/web1 1.png" class="webImg">
+<br> <p><b>Home page | Page 1</b><br>
+    This home page is made up of the background, header, title, and the three buttons. The background is an image created in Adobe Illustrator with my photograph blurred in the background and grid lines.
+    <br><br>
+    The three buttons turn orange when hovered over, indicating interactiveness and encourage visitors to click on it; which will direct users to one of the three next pages.</p>
+<br><br>
+<img src="Port illustrations/web1 2.png" class="webImg">
+<br> <p><b>Page 2</b><br>
+    The second page contains the first part of the poem. It has a video background of an animation which I created in p5.js, visualizing the color transitions described in the writing. The back button brings the viewers to the home page.
+<br><br>
+<img src="Port illustrations/web1 3.png" class="webImg">
+<br> <p><b>Page 3</b><br>
+    The third page contains the second part of the poem which is laid out over a maze-like template. The background, which is made up of a blurred eye photograph and a collection of lines, was illustrated in Adobe Illustrator. I approached the design of this third page based on the lines of the poem.<br><br>
+<img src="Port illustrations/web1 4.png" class="webImg">
+<br> <p><b>Page 4</b><br>
+    This last page contains the last section of the poem which is laid out in different allignments. I tried exploring different allignments in css and used a video background for this as well. Lastly, I also brought in a squiggly graphic which was also made in Adobe Illustrator.<br><br>
+
+<h2>Reflection</h2>
 <p>
-    Pixel Array Tutorial: https://youtu.be/7UXCT_LVFNo?si=wKpFiMtunxtDsKez
-    ASCII Character Tutorial: https://youtu.be/55iwMYv8tGI?si=KCgW_mseKsGtE_bf</p>
+    As this was my first exposure to webpage design, the concept of relative units were still foreign, hence the unresponsive sizing of elements in the website. However, I felt like it was a great practice and 
+    introduction into html and css as I was able to learn a lot of new concepts in an effective way.</p>
 
 
 </div>
@@ -94,10 +80,10 @@ Pic 3: Rubrik's cube, left: yellow, right: blue; top: red</p>
 
     </div>
     <script>
-        var button = document.getElementById('puppyVision');
+        var button = document.getElementById('fullScreen');
     
     button.addEventListener('click', function() {
-        window.location.href = 'https://editor.p5js.org/carbudar/full/awLpZY_O8';
+        window.location.href = 'https://carbudar.github.io/Assignment-1/';
     });
 
         var backBtn3 = document.getElementById('backBtn3');
