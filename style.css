@@ -767,7 +767,7 @@ span{
 .photo-grid, .tableProcess {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 1%;
 }
 
 .photo-grid img,
@@ -794,4 +794,67 @@ span{
     margin-top: 23%;
 }
 
+#sunProcess{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1%;
+    
+}
 
+#sunProcess img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#sunProcess video{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    width: auto;
+    height:400;
+}
+
+#sunContainer{
+    display: grid;
+    height: 70vh;
+    width: 35vw;
+    margin: auto;
+    margin-top: -10%;
+    justify-items: center;
+}
+
+#sunThumbnail{
+    width: 50%;
+}
+
+#sunVideo{
+    width: 60%;
+    
+}
+
+#ropeThumbnail{
+    margin: auto;
+    margin-top: -10%;
+    width: 90%;
+}
+
+#lampThumbnail{
+    width: 70%;
+    margin: auto;
+    margin-top: -10%;
+}
+
+.photo-grid2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1%;
+    margin-top: 10%;
+}
+
+.photo-grid2 img,
+.photo-grid2 video{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}

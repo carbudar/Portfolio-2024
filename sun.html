@@ -30,12 +30,15 @@
 
     <div id="contentContainer">
         <div id="thumbnail">
-            <button type="button" id="backBtn4">back</button>
-
-            <video width="auto" height="400" autoplay muted loop id="video">
-                <source src="Port illustrations/IMG_1595.mov" type="video/mp4">
-              </video>
             
+            <button type="button" id="backBtn4">back</button>
+            <div id="sunContainer">
+            <video width="auto" height="300" autoplay muted loop id="sunVideo">
+                <source src="Port illustrations/sun vid 6 copy.MOV" type="video/mp4">
+              </video>
+              <img src="Port illustrations/Screenshot 2024-04-29 at 04.21.58.png" id="sunThumbnail">
+            </div>
+             
         </div>
         
         
@@ -43,71 +46,75 @@
     <h1>Sunrise</h1>
     <h2>3D Print, Electronics (2023)</h2>
         <p id="textContent">
-        While being well-exposed working with p5.js as a digital medium, I was intrigued in combining the interaction between physical and digital components. In this project, I took an existing object and turning it into a new interactive toy; what once was a solar-powered kinetic toy is now turned into a light-triggered form with a digital output.
-    </p>    <br>
+    The rapid development of technology is slowly affecting how people go about their daily task. It has been deeply incorporated 
+    in the everyday life seamlessly like it is natural. Since nature and technology are two contradicting topics I wondered what 
+    is the true relationship between nature and technology? Is it true that technologies can take over natural resources and to what extent? 
+    How can technology be useful as a substitution of natural resources? and what about nature is irreplaceable?
+   <br><br>
+   I attempted to build an artificial sun replacement with leds and a motor running it. The idea is to have the led illuminate brighter as the space gets darker, vice-versa. <br>
+   As some people have trouble managing time between the night and day time, I expected this project to bridge that transition, bringing the sunlight indoors when it is gone from the outdoors.
+</p> 
     <h2>Design Process</h2>
-    <p>
-        <b>Ideation</b>
-        <br><br>
-        This project was inspired by the street-vendors that I usually walk-by in Chinatown, New York City. I often see them selling these toys, which I used to own as a kid too; everytime I see these non-stop-nodding characters, I always joke about how tiring it must be. It reminded me how contrastingly, people around me including myself would tend to nod and smile when tired, at school, at work, or in their social life. 
-        It has become a normalized social construct to the point where when we see people nodding and smiling, we never really know what is going on in their minds.<br><br>
-        I am hoping to visualize those clouded minds through this project.
-        <br><br>
-        The cat hat moves back and forth (using the pendulum mechanism inside it) which influences the amount of light source that comes to the photoresistor sensor (embeded onto the 3d printed part)
+   
+        <div id="sunProcess">
+        <img src="Port illustrations/Untitled 90 2.11.56 AM.png">
+        
 
-I was originally going to use the ultrasonic sensor, however it is not too reactive as the distance of the object to the sensor remained constant.
-</p>
-
-<div id="video-container">
-    <video width="auto" height="400" autoplay muted loop id="video">
-        <source src="Port illustrations/IMG_1549.mov" type="video/mp4">
-      </video>
-      <p><i>(experimentation using ultrasonic sensor)</i></p>
-    </div>
-
-<p>With larger distance it works well, but not with small distance
-        <br><br>
-        <b>Deconstruction</b><br>
-        I hacked this toy by first taking apart the form; through this process, I learnt that these are the components within it:
-        <ul>
-            <li>Electromagnetic coil</li>
-            <li>Capacitor</li>
-            <li>Solar cell</li>
-            <li>Wires</li>
-            <li>Magnet on pendulum</li>
-        </ul>
-        <div id="deconstruction">
-        <img src="Port illustrations/deconstruct 1.jpeg">
-        <img src="Port illustrations/deconstruct 2.jpeg">
-        <img src="Port illustrations/deconstruct 3.jpeg">
-    </div><br><br>
-        <b>Rebuilding</b>
-        <p>Components:</p>
-        <ul>
-            <li>Arduino uno</li>
-            <li>Bread board</li>
-            <li>Photoresistor sensor</li>
-            <li>Jumper wires</li>
-            <li>220ohm resistor</li>
-            <li>Power cable</li>
-        </ul>
-        <p>Additional Materials:</p>
-        <ul>
-            <li>3D printed model</li>
-            <li>Cat toy (disassembled)</li>
-            <li>Nano tape</li>
-            <li>p5.serialcontrol</li>
-            <li>p5js sketch</li>
-        </ul>
-        <div id="deconstruction">
-            <img src="Port illustrations/cat rebuilt.jpeg">
-            <img src="Port illustrations/cat detail.jpg">
-            <img src="Port illustrations/cat back.jpeg">
-        </div>
-
-       
-    </p>
+            <img src="Port illustrations/sun 3d1.png">
+          
     
+            <img src="Port illustrations/sun 3d2.png">
+           
+       
+            <img src="Port illustrations/sun 3d3.png">
+            <img src="Port illustrations/IMG_1806.jpeg">
+            <img src="Port illustrations/Screenshot 2024-04-29 at 04.21.58.png">
+            
+
+    </div>
+      <p><b>Materials:</b>
+        <ul>
+            <li>3D printed base</li>
+            <li>Stepper motor + stepper driver</li>
+            <li>ARGB LEDs</li>
+            <li>Arduino Nano</li>
+            <li>Photoresistor sensor</li>
+            <li>Power supply</li>
+        </ul>
+    </p>
+    <h2>Prototyping</h2>
+    <br><br>
+       
+        <div id="sunProcess">
+            <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 1.MOV" type="video/mp4">
+              </video>
+            
+              <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 2.MOV" type="video/mp4">
+              </video>
+
+              <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 3.MOV" type="video/mp4">
+              </video>
+    
+            <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 4.MOV" type="video/mp4">
+              </video>
+            
+              <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 5.MOV" type="video/mp4">
+              </video>
+
+              <video autoplay muted loop id="video">
+                <source src="Port illustrations/sun vid 6.MOV" type="video/mp4">
+              </video>
+        </div>
+       
+
+    <h2>Answers To My Questions</h2>
+    <p>Though visually natural resources are replicable using technology and electronics, they have more intricate properties scientifically that are irreplacable. Taking this project as an example, I can recreate the brightness of a sunrise, and a rotating visual; however this artifical copy of a natural resource will not provide any benefits apart from visual benefits.<br><br>
+    In conclusion, though technologies can seem like a good substitute of natural resources, it is still far from taking over the nature but can compliment and work hand in hand to enhance our experiences in life.</p>
 
 
 
