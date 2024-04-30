@@ -918,7 +918,7 @@ span{
 
 #profilePic img{
     position: absolute;
-    width: 5%;
+    width: 8%;
     top: 50%;
     left: 60%;
     border-radius: 10px;
@@ -943,7 +943,7 @@ span{
 #profileSection img{
 height: 19%;
 justify-self: center;
-margin-top: -4%;
+margin-top: 1%;
 border-radius: 25px;
 }
 
