@@ -410,7 +410,7 @@ span{
     width:99vw;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
+    border-radius: 60px;
     background-color:#A3AFFF;
 }
 
@@ -919,8 +919,8 @@ span{
 
 #profilePic img{
     position: absolute;
-    width: 8%;
-    top: 55%;
+    width: 6%;
+    top: 44%;
     left: 60%;
     border-radius: 10px;
 }
