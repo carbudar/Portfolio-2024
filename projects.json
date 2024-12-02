@@ -1,0 +1,272 @@
+{
+    "website":{ 
+        "PERSPECTIVES":{
+            "name":"PERSPECTIVES",
+            "year":"2024",
+            "info":"This website is an exploration of perspectives, both physical and conceptual. Initially, the idea centered on the literal act of observing a space, but it evolved to include the broader notion of perspective as an opinion or interpretation. This project delves into the interplay between individual perceptions of a space and the atmosphere or essence that space conveys. The focus is on Madison Square Park and the Flatiron District, an area I am intimately familiar with as a resident. My personal connection to the neighborhood, along with my inherent biases, sparked an interest in contrasting my own experiences with the viewpoints of others, creating a nuanced understanding of this iconic location.",
+            "material":["HTML","CSS"],
+            "link":"https://carbudar.github.io/PERSPECTIVES/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/PERSPECTIVES cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "today":{
+            "name":"today",
+            "year":"2024",
+            "info":" 'today' is designed to serve as a personal tool for users to document their emotions, sleep schedules, and other behavioral patterns, functioning similarly to a digital diary. All entries are stored locally, ensuring privacy and accessibility for users to review and reflect on their progress over time.",
+            "material":["HTML","CSS","Javascript"],
+            "link":"https://carbudar.github.io/Assignment-3/index.html",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/today cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "System Log":{
+            "name":"System Log",
+            "year":"2024",
+            "info":"This project is a tool designed to translate daily activities into visualized data, providing insights into key metrics such as water intake, sleep duration, social interactions, and step count. By transforming these behaviors into clear, interpretable visuals, the tool aims to support users in tracking and understanding their habits effectively.",
+            "material":["HTML","CSS","Javascript"],
+            "link":"https://carbudar.github.io/Self-As-System/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/System Log cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "Photo Archive":{
+            "name":"Photo Archive",
+            "year":"2024",
+            "info":"This website serves as an archival hub for my personal photography portfolio, offering detailed insights into each piece. The collection is presented in an organized grid format, allowing for a visually cohesive and engaging browsing experience.",
+            "material":["HTML","CSS","Javascript"],
+            "link":"https://carbudar.github.io/Photo-Archive/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/Photo Archive cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "Big City Small World":{
+            "name":"Big City Small World",
+            "year":"2024",
+            "info":"'Big City Small World'is an ongoing archival documentation of a Soho, New York as a social neighborhood, aimed at capturing and analyzing its gradual evolution over time. It seeks to highlight the unique characteristics that distinguish one neighborhood from another and explore the underlying factors contributing to these differences. The project encourages individuals to consciously take note of their surroundings, becoming active observers of behavioral patterns, social norms, and interactions—whether between people or between people and their environment. By fostering this sense of observation, the initiative aims to inspire deeper connections with the spaces we inhabit.",
+            "material":["HTML","CSS","Javascript"],
+            "link":"https://carbudar.github.io/Big-City-Small-World/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/Big CIty Small World cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "Odd Fellow Says Hello":{
+            "name":"Odd Fellow Says Hello",
+            "year":"2024",
+            "info":"Put your wits to the test with Odd Fellow Says Hello, a game of wordplay and fun! In each round, you’ll face four words—but one doesn’t belong. Is it a trick of meaning or a subtle twist of context? Gather your friends or challenge yourself to find the Odd Fellow before time runs out. Perfect for quick thinkers, word lovers, and anyone who loves a clever challenge. Are you sharp enough to spot the odd fellow? Odd fellow says hello!",
+            "material":["HTML","CSS","Javascript","Typescript"],
+            "link":"https://odd-one-out-game.deno.dev/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/Odd Fellow Says Hello cover.png",
+                "img2":"",
+                "img3":""
+            }
+        }
+        
+
+    },
+    "cc":{
+        "Data Portrait":{
+            "name":"Data Portrait",
+            "year":"2023",
+            "info":"For this project, I spent a week tracking my personal habit to create a data-self portrait. This sketch is divided into 7 different parts (shown by the guidelines in the background); the first section determines the first day which was Wednesday. The section goes up until the last day, which is Tuesday and the days change based on the mouse location. The density and the size of the orange form is the amount of time that I spent talking to people on the phone (in minutes), while the density and size or the purple form is based on the total minutes I spent interacting with people in real life. Lastly, the row of squares that travels from left to right shows the amount of people I interacted with per day.",
+            "material":["Javascript (p5.js)"],
+            "link":"https://editor.p5js.org/carbudar/full/Zlm2QO95a",
+            "haveLink": true,
+            "isPhysical":false,
+            "documentation":{
+                "thumbnail":"Assets/Data Portrait cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "In Bloom":{
+            "name":"In Bloom",
+            "year":"2023",
+            "info":"Explorative p5.js sketch inspired by spirograph templates, plastic stencils with  ridged circular cut out in the center. I would trace lines in it using the given template and make all kinds of cool spirals, which I have always found facinating. I wanted to recreate a similar effect to the spirographs by repeating multiple ellipses on top of each other which will then create a parametrized form.",
+            "material":["Javascript (p5.js)"],
+            "link":"https://editor.p5js.org/carbudar/full/knKo2lGbS",
+            "haveLink": true,
+            "isPhysical":false,
+            "documentation":{
+                "thumbnail":"Assets/In Bloom cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "Rock Paper Scissor":{
+            "name":"Rock Paper Scissor",
+            "year":"2023",
+            "info":"Rock-Paper-Scissors generator that displays a random symbol (rock, paper, or scissors) upon each mouse click, featuring pixelated visual language and retro-inspired design.",
+            "material":["Javascript (p5.js)"],
+            "link":"https://editor.p5js.org/carbudar/full/1BuASB3_M",
+            "haveLink": true,
+            "isPhysical":false,
+            "documentation":{
+                "thumbnail":"Assets/Rock Paper Scissors cover.png",
+                "img2":"",
+                "img3":""
+            }
+        },
+        "Time Keeper":{
+            "name":"Time Keeper",
+            "year":"2023",
+            "info":"Conventional clocks mark seconds, minutes, and hours according to a 24 hour cycle. This segmented, discrete, and regimented approach to parsing time is not universal in terms of capturing and measuring of experience. <br> Time often feels fluid and variable, moving swiftly at moments and slowing to a near standstill at others. This time-keeper clock experimentation seeks to visualize these fluctuations in the perceived speed of time. This project explores the potential of design as a tool for psychological time modulation, offering a unique perspective on the relationship between time perception and mental states.<br> <br><b>Dial when mouse is on the left side of the screen:</b><br>Slower paced<br><b>Dial when mouse is on the right side of the screen:</b><br>Faster paced",
+            "material":["Javascript (p5.js)"],
+            "link":"https://editor.p5js.org/carbudar/full/JqymTsA1K",
+            "haveLink": true,
+            "isPhysical":false,
+            "documentation":{
+                "thumbnail":"Assets/Time Keeper cover.png",
+                "img2":"",
+                "img3":""
+            }
+        
+    },
+    "Puppy Vision":{
+            "name":"Puppy Vision",
+            "year":"2023",
+            "info":"In the summer, I adopted a little puppy named Charli. By spending plenty of time training and trying to understand her, I came across a study which mentioned that dogs are only able to see yellow and blue. After realizing how Charli is mostly intrigued by her blue blankets and toys, I felt obligated to get her all blue everything.<br>The main purpose of this experimental camera project is to help me put myself in Charli's shoes and see the world the way she sees it.",
+            "material":["Javascript (p5.js)"],
+            "link":"https://editor.p5js.org/carbudar/full/awLpZY_O8",
+            "haveLink": true,
+            "isPhysical":false,
+            "documentation":{
+                "thumbnail":"Assets/Puppy Vision cover.png",
+                "img2":"",
+                "img3":""
+            }
+        
+    },
+    "Looking In, Looking Out":{
+        "name":"Looking In, Looking Out",
+        "year":"2024",
+        "info":"I was inspired by the prompt 'Looking In, Looking Out' as a tool of reflection as well as escapism. While doors can lead you into a space, it can also transport you out beyond it. With my partner and classmate, Michelle Xing, we were able to cohesively build a media where people could enter a space of reflection beyond the tangible world.",
+        "material":["Unity", "Electronics"],
+        "link":"https://drive.google.com/file/d/11LMhpekrSUWbKPhQG8SG1pi_NhH7Im_j/preview",
+        "haveLink": true,
+        "isPhysical":false,
+        "documentation":{
+            "thumbnail":"Assets/Looking In Looking Out cover.png",
+            "img2":"",
+            "img3":""
+        }
+    
+},
+"Sunrise":{
+    "name":"Sunrise",
+    "year":"2023",
+    "info":"The rapid development of technology is slowly affecting how people go about their daily task. It has been deeply incorporated in the everyday life seamlessly like it is natural. Since nature and technology are two contradicting topics I wondered what is the true relationship between nature and technology? Is it true that technologies can take over natural resources and to what extent? How can technology be useful as a substitution of natural resources? and what about nature is irreplaceable? <br>I attempted to build an artificial sun replacement with leds and a motor running it. The idea is to have the led illuminate brighter as the space gets darker, vice-versa.<br>As some people have trouble managing time between the night and day time, I expected this project to bridge that transition, bringing the sunlight indoors when it is gone from the outdoors.",
+    "material":["3D printed parts", "Electronics"],
+    "link":"https://drive.google.com/file/d/18Hf118F1rqCgy8O9wfQegCZ4uNfXq8RU/preview",
+    "haveLink": true,
+    "isPhysical":true,
+    "documentation":{
+        "thumbnail":"Assets/Sunrise cover.png",
+        "main":"Assets/Sunrise demo.mov",
+        "vid1":"Assets/sun vid 3.MOV",
+        "vid2":"Assets/sun vid 4.mov",
+        "img1":"Assets/Sunrise cover.png",
+        "img2":"Assets/sun 3d1.png"
+        
+    }
+
+},
+"Time Machine":{
+    "name":"Time Machine",
+    "year":"2023",
+    "info":"Time is a universal yet profoundly subjective experience, perceived differently depending on individual circumstances and contexts. Although every person has the same 24 hours in a day, the passage of time can feel faster or slower based on activities, environments, and interpersonal interactions. This variability highlights the surreal and fluid nature of time. <br> In philosophy, time is often regarded as a metaphysical concept, defying material definition. The progression of moments—the future becoming the present and the present transitioning into the past—creates a dynamic interplay that can distort our perception of time. In group settings, for example, the flow of conversation and actions can seemingly compress time, reducing the perceived gaps between past, present, and future. <br>This reflection underscores the intangible and abstract nature of time. It extends beyond the numerical representation of hours on a clock, often relying on intuition and perception. This abstraction challenges traditional notions of time, emphasizing its fluid and subjective essence.",
+    "material":["Acrylic", "Electronics"],
+    "link":"https://drive.google.com/file/d/1KI50alFyTDo_FiOeD25Qpnj2dFwuVhwJ/preview",
+    "haveLink": true,
+    "isPhysical":true,
+    "documentation":{
+        "thumbnail":"Assets/Time Machine cover.jpeg",
+        "img2":"",
+        "img3":""
+    }
+
+},
+"Nod And Smile":{
+    "name":"Nod And Smile",
+    "year":"2023",
+    "info":"While being well-exposed working with p5.js as a digital medium, I was intrigued in combining the interaction between physical and digital components. In this project, I took an existing object and turning it into a new interactive toy; what once was a solar-powered kinetic toy is now turned into a light-triggered form with a digital output.",
+    "material":["Plastic cat toy","3D printed parts", "Electronics"],
+    "link":"https://drive.google.com/file/d/18466Ue0UrrTXQf4fHdW9cTzqpgjgrEya/preview",
+    "haveLink": true,
+    "isPhysical":true,
+    "documentation":{
+        "thumbnail":"Assets/Nod And Smile Cover.png",
+        "img2":"",
+        "img3":""
+    }
+
+}
+},
+    "product":{
+        "Light House":{
+            "name":"Light House",
+            "year":"2023",
+            "info":"This project was inspired between the basic relationship between two-dimensions and three-dimensions, how all three-dimensional form was formed by basic planar fields, yet the potentials are limitless. I wanted to design a sculptural form that looks visually appealing, yet functional. Combining an inspiration from Japanese origami artistry and my interest in modular design, I came up with 'Light House', a side coffee table and storage unit with a removable battery-powered lighting component.",
+            "material":["Acrylic","Polycarbonate","Electronics"],
+            "link":"",
+            "haveLink": false,
+            "documentation":{
+                "thumbnail":"Assets/Light House cover.jpg",
+                "main":"Assets/table demo.mov",
+                "img1":"Assets/table1.jpg",
+                "img2":"Assets/table 3.jpg",
+                "img3":"Assets/table 6.jpeg",
+                "img4":"Assets/table 7.jpeg.png",
+                "img5":"Assets/table 4.jpg"
+            }
+
+        },
+        "EternaLight":{
+            "name":"EternaLight",
+            "year":"2023",
+            "info":"Designed with sustainability in mind, EternaLight is a lighting product designed to be the last lamp that everyone will have. With adjustable length, orientation, and brightness, EternaLight will be able to meet everyone's different needs and priorities. The separable parts help users to omit unnecessary waste by removing and replacing just the part which is damaged Not only that users will minimize solid waste contribution to the landfill, EternaLight's simple and minimalist design will not fade through trends in the upcoming years, making it a lighting fixture that will last users eternally.",
+            "material":["Wood","Mycelium","Hardware","Electronics"],
+            "link":"",
+            "haveLink": false,
+            "documentation":{
+                "thumbnail":"Assets/EternaLight cover.jpg",
+                "img2":"",
+                "img3":""
+            }
+
+        },
+        "Twisted":{
+            "name":"Twisted",
+            "year":"2021",
+            "info":"This project was a material exploration with concrete, resin, and other supporting elements. I was intrigued in how shape manipulation can vary based on the base material behaves.",
+            "material":["Rope","Resin","Concrete","Electronics"],
+            "link":"",
+            "haveLink": false,
+            "documentation":{
+                "thumbnail":"Assets/Rope Lamp cover.png",
+                "img2":"",
+                "img3":""
+            }
+
+        }
+
+    }
+
+}
