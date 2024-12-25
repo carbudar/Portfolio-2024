@@ -34,6 +34,7 @@ a:active
 .header {
     display: flex;
     position: fixed;
+    top: 0;
     width: 100vw; /* Use 100% instead of 100vw to avoid overflow */
     background-color: #F2D37C;
     border-radius: 10px;
@@ -41,7 +42,9 @@ a:active
     color: rgb(0, 36, 0);
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
+
 
 .headerLeft {
     padding-left: 3vw;
@@ -317,12 +320,14 @@ transform: scale(0.9);
 #profileSection{
     display: grid;
     background-color: #A3AFFF;
-    position: relative;
     border-radius: 60px;
     overflow: hidden; /* Hide overflow initially */
     height: 150vh; /* Set a fixed height */
-
+    margin-top: 8vh;
 }
+
+
+
 
 #profileSection img{
 height: 19%;
@@ -369,13 +374,16 @@ li{
 
 .container-website,.container-cc,.container-product{
     width:100vw;
-    min-height: 100vh;
+    min-height: 92vh;
     height: auto;
+    position: relative;
     background-color: #DEE2F2;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+    top: 8vh;
 }
 
 .project{

@@ -113,13 +113,8 @@ const loadProjects = async () => {
             // Interaction event listener
             projectDiv.addEventListener('mouseover', () => {
                 projectDiv.appendChild(expandCard);
-                container.classList.add('margin-expand')
 
             });
-            projectDiv.addEventListener('mouseleave',()=>{
-                container.classList.remove('margin-expand')
-            })
-
             projectDiv.addEventListener('mouseleave', () => {
                 expandCard.remove();
             });

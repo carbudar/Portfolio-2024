@@ -77,8 +77,22 @@
                 "img2":"",
                 "img3":""
             }
+        },
+        "Hue Hunter":{
+            "name":"Hue Hunter",
+            "year":"2024",
+            "info":"Sight and hearing exercise game designed specifically with visual designer and/or musician in mind. User's are prompted to find the red square by following the transition of color and pitch. As users level up, the game becomes harder.",
+            "material":["HTML","CSS","Javascript"],
+            "link":" https://carbudar.github.io/hue-hunter/",
+            "haveLink": true,
+            "documentation":{
+                "thumbnail":"Assets/hue hunter cover.png",
+                "img2":"",
+                "img3":""
+            }
         }
         
+       
 
     },
     "cc":{
